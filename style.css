@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background:url(bg\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+.navbar{
+    width:86%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+.navbar .logo{
+    width:160px;
+    cursor: pointer;
+    margin-top:-3%;
+    margin-left:-2%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+ul li a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color:darkslategray;
+    margin-top: -3%;
+    transition: color 0.3s ease;
+}
+ul li a:hover{
+    color: goldenrod;
+}
+.info{
+    margin-top: 6%;
+    margin-left: 7%;  
+}
+.info h1{
+    color: darkslategray;
+    font-size: 65px;
+}
+.info h3{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 48px;
+}
+.info span  {
+    color: goldenrod;
+}
+.info p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+.info a{
+text-decoration: none;
+color:white;
+background:black;
+padding :10px 15px;
+border-radius: 10px;
+display: inline-block;
+margin-top: 15px;
+transition: background 0.3s ease;
+}
+.info a:hover{
+    background: lightskyblue;
+}
+.image{
+    width:30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.image img{
+  position: absolute;
+  height: 140%;
+  left: 40%;
+  transform: translate(-55%);
+  bottom: 0;
+    transition: left 0.5s ease;
+}
+.image:hover img{
+    left:55%
+}
+.page{
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.9) url("bg(1).jpg") center / cover fixed;
+    font-family: sans-serif;
+    color: darkslategray;
+}
+.page-content{
+    width: 86%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 55px 0 80px;
+}
+.page-content h1{
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+.page-content h2{
+    color: goldenrod;
+    margin: 28px 0 10px;
+}
+.page-content p{
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.page-link{
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 18px;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.page-link:hover{
+    background: lightskyblue;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+.project-card{
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.88);
+    border-left: 4px solid goldenrod;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.project-card h2{
+    margin-top: 0;
+}
+.contact-list{
+    margin-top: 26px;
+    font-size: 19px;
+    line-height: 2;
+}
+@media (max-width: 800px){
+    .navbar{
+        width: 92%;
+    }
+    .navbar .logo{
+        width: 110px;
+    }
+    ul li{
+        margin: 0 6px;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+    .page-content h1{
+        font-size: 40px;
+    }
+}

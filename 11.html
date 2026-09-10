@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESH BAKERS</title>
+    <style>
+        button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-button {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .order-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 45%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            transform: skewX(-20deg);
+            transition: left 0.45s ease;
+        }
+
+        .order-button:hover {
+            background-color: #e5533d;
+            box-shadow: 0 6px 14px rgba(95, 65, 0, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .order-button:hover::after {
+            left: 130%;
+        }
+
+        .order-button:active {
+            transform: translateY(0) scale(0.97);
+            box-shadow: 0 2px 5px rgba(95, 65, 0, 0.2);
+        }
+
+        .order-button:focus-visible {
+            outline: 3px solid #5f4100;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .order-button,
+            .order-button::after {
+                transition: none;
+            }
+        }
+    </style>
+</head><body background="pastry.jpg" bgcolor="#ffffff" text="#000000">
+
+    <h1><font color="#5f4100" size="7">WELCOME TO FRESH BAKERS</font></h1>
+    <h2 align="center"><font color="#5f4100" size="5">FRESHLY BAKED, MADE WITH LOVE</font></h2>
+    <h3><font color="#98804d" size="5">HOME🏠</font></h3>
+    <p><b><i><font color="#000000" size="4">Welcome to Fresh Bakers, where every bite is made with fresh ingredients, delicious flavors, and lots of love. From soft breads and crispy pastries to beautiful cakes and sweet treats, we have something for everyone.</font></i></b></p>
+    <h3><font color="#98804d" size="5">OUR PRODUCTS🍰</font></h3>
+    <p><b><i><font color="#000000" size="4">At Fresh Bakers, we prepare fresh and delicious bakery items using quality ingredients. Choose from our wide variety of sweet and savory treats.</font></i></b></p>
+    <h3><font color="#98804d" size="5">CAKE🎂</font></h3>
+    <div style="display: flex; gap: 30px; align-items: center;">
+    <img src="cake.jpg" alt="cake" width="500" height="300"><img src="cake1.jpg" alt="cake" width="500" height="300">
+    </div><br>
+    <p><a class="order-button" href="address1.html" target="_blank"><font color="#ffffff" size="5">Order Now</font></a></p>
+    <p><b><i><font color="#000000" size="4">Our cakes are freshly baked with the finest ingredients and lots of love. From rich chocolate to classic vanilla, every cake is made to taste delicious. Perfect for birthdays, celebrations, or simply treating yourself. Choose your favorite flavor and make every moment a little sweeter! 🍰❤️</font></i></b></p>
+    <div style="display: flex; gap: 30px; align-items: center;">
+    <img src="Cookies.jpg" alt="cookies" width="500" height="300"><img src="cookies12.jpg" alt="cookies" width="500" height="300">
+    </div><br>
+    <p><a class="order-button" href="12.html" target="_blank"><font color="#ffffff" size="5">Order Now</font></a></p>
+    
+    <h3><font color="#98804d" size="5">COOKIES 🍪</font></h3>
+    <p><b><i><font color="#000000" size="4">Indulge in our delicious cookies, baked to perfection with a perfect balance of flavors and textures. From chewy chocolate chip cookies to crispy oatmeal cookies, we have a variety of options to satisfy your sweet tooth. Treat yourself or share with loved ones. 🍪😋</font></i></b></p>
+    <h3><font color="#98804d" size="5">CONTACT US 📞</font></h3>
+    <p><b><i><font color="#000000" size="4">Have questions or want to place an order? Contact us at:</font></i></b></p>
+    <ul>
+        <li><font color="#000000" size="4">Phone: 123-456-7890</font></li>
+        <li><font color="#000000" size="4">Email: info@freshbakers.com</font></li>
+        <li><font color="#000000" size="4">Address: 123 Bakery Street, City, State 12345</font></li>
+    </ul>
+    <h3><font color="#98804d" size="5">SANDWICHES 🥪</font></h3>
+    <div style="display: flex; gap: 30px; align-items: center;">
+    <img src="sandwich.jpg" alt="sandwich" width="500" height="300"><img src="sandwich12.jpg" alt="sandwich" width="500" height="300">
+    </div><br>
+    <a class="order-button" href="control.html" target="_blank"><font color="#ffffff" size="5">Order Now</font></a>
+    <p><b><i><font color="#000000" size="4">Enjoy our fresh and delicious sandwiches, made with the finest ingredients and served hot. From classic turkey and cheese to innovative combinations, we have a sandwich for every taste. Perfect for a quick meal or a satisfying snack. 🥪😋</font></i></b></p>
+
+</body>
+</html>

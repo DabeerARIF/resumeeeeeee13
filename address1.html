@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKE</title>
+    <style>
+      button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-button {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .order-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 45%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            transform: skewX(-20deg);
+            transition: left 0.45s ease;
+        }
+
+        .order-button:hover {
+            background-color: #e5533d;
+            box-shadow: 0 6px 14px rgba(95, 65, 0, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .order-button:hover::after {
+            left: 130%;
+        }
+
+        .order-button:active {
+            transform: translateY(0) scale(0.97);
+            box-shadow: 0 2px 5px rgba(95, 65, 0, 0.2);
+        }
+
+        .order-button:focus-visible {
+            outline: 3px solid #5f4100;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .order-button,
+            .order-button::after {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body background="pastry.jpg" bgcolor="#ffffff" text="#000000">
+    <div style="display: flex; gap: 30px; align-items: center;">
+    <img src="cake.jpg" width="500" height="300" alt="Cake"><img src="cake1.jpg" width="500" height="300" alt="Cake">
+    </div>
+  
+    <h3><font color="#98804d" size="5">PRICE 🏠</font></h3>
+    <p><b><i><font color="#000000" size="7"><del>$15.99</del> <ins>$12.99</ins></font></i></b></p>
+     <h3><font color="#98804d" size="5">DESCRIPTION 🥐</font></h3>
+     <p><b><i><font color="#000000" size="4">Treat yourself to the delicious taste of our freshly baked cakes, made with high-quality ingredients and a perfect blend of rich flavors. From creamy chocolate cakes to classic vanilla and delightful fruit cakes, every bite is soft, moist, and full of sweetness. Whether you are celebrating a birthday, anniversary, or simply craving something special, our cakes are made to bring a smile to your face. **Visit Fresh Bakers today, choose your favorite cake, and taste the freshness and love in every bite. Order now and enjoy a delicious treat!** 🍰❤️</font></i></b></p>
+     <h3><font color="#98804d" size="5">TOPPINGS 🎂</font></h3>
+     <ul>
+        <li>WHIPPING CREAM</li>
+        <li>DARK CHOCOLATE</li>
+        <li>FRUITS</li>
+        <li>CHOCOLATE CHIPS</li>
+        <li>FONDANT</li>
+        <li>SPRINKLES</li>
+     </ul>
+     <h3><font color="#98804d" size="5">PRICE AND QUALITY 🛒</font></h3>
+     <p><b><i><font color="#000000" size="4">At **Fresh Bakers**, we offer delicious cakes at affordable prices without compromising on quality. Our cakes are made with fresh ingredients and carefully prepared to give you the perfect taste in every bite. Whether you want a simple vanilla cake or a rich chocolate cake, we have options for every budget and occasion. **Enjoy premium taste at a price everyone can afford!** 🍰✨</font></i></b></p>
+    <p><a class="order-button" href="11.html"><font color="#ffffff" size="5">Return</font></a></p>
+</body>
+</html>
